@@ -1,0 +1,10 @@
+<h2>Text Support</h2>
+</br></br>
+<h3>Tickets</h3>
+</br>
+<div class="ticket" ng-repeat="number in numbers">
+	<h4>{{number.$id}}</h4>
+	<ol>
+		<li ng-repeat="message in number">{{message.date_created}}</br> &nbsp;&nbsp;"{{message.body}}"</br><input placeholder="Response" ng-model="response"><button ng-click="postReq(response, number.$id, number)">Submit</button></br>
+	</ol>
+</div>
